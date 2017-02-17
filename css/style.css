@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Myriad Pro','PT Sans', sans-serif;
+}
+
+body{
+	height: 2000px;
+}
+
+/* background design */
+
+.container{
+	width: 520px;
+	margin: 220px auto;
+	position: relative;
+}
+
+.content_wrapper{
+	height: 690px;
+	overflow:hidden;
+}
+
+.page{
+	width: 460px;
+	padding: 30px 30px;
+	border: 2px solid #000;
+}
+
+.page:first-child{
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	background: #ebebeb;
+	z-index: 2;
+}
+
+.page:nth-child(2){
+	background: #cccccc;
+}
+
+.page:nth-child(3){
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	background: #acacac;
+	z-index: -1;
+}
+
+.page .sticker{
+	height: 35px;
+	width: 110px;
+	border: 2px solid #000;
+	border-radius: 0 15px 15px 0;
+	position: absolute;
+	top: 40px;
+	padding:0;
+}
+
+.page:first-child .sticker{
+	background: #f68e56;
+	left: 480px;
+}
+
+.page:nth-child(2) .sticker{
+	background: #39b54a;
+	left: 450px;
+}
+
+.page:nth-child(3) .sticker{
+	background: #00aeef;
+	left: 420px;
+}
+
+/* content */
+
+section{
+	margin:5px 0;
+}
+
+article{
+	margin: 12px 0 5px;
+}
+
+article:after, section:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+h1{
+	font-size: 24px;
+	font-weight: normal;
+	margin: 5px 0 12px;
+}
+
+h2{
+	font-size: 18px;
+	font-weight: normal;
+	margin: 5px 0 20px;
+}
+
+p{
+	font-size: 12px;
+}
+
+.left{
+	float: left;
+	margin: 0 20px 15px 0;
+}
+.right{
+	float: right;
+	margin: 0 0 15px 20px; 
+}
+
+footer{
+	font-size: 9px;
+	text-align: center;
+	margin: 15px 0 20px;
+}
+
+/* .share - fixed block */
+
+.share{
+	padding:8px 4px 4px;
+	background: #fbaf5d;
+	border: 1px solid #000;
+	position: fixed;
+	right:4px;
+	bottom:4px;
+	z-index:3;
+}
+.share p{
+	font-size: 16px;
+	text-align: center;
+}
+
+.share a{
+	display:inline-block;
+	margin:4px 2px;
+}
